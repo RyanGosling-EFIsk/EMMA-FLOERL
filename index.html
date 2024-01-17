@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <head>
   <title>Emma's Wunderland</title>
+      
+
+    button {
+      background-color: #8a2be2;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #663399;
+    }
+  </style>
+
 </head>
 <body>
   <h1>Emma's Wunderland</h1>
@@ -27,7 +43,19 @@
       <!-- Add more magical animals as needed -->
     </tbody>
   </table>
+  <form>
+    <h2>Kontaktiere uns</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Nachricht:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Abschicken</button>
+  </form>
 </body>
 </html>
 
