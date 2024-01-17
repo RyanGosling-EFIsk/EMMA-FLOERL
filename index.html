@@ -116,6 +116,67 @@
       <!-- Add more magical animals as needed -->
     </tbody>
   </table>
+  <title>Fruit Characteristics</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #663399;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f5f5f5;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background-color: #e0e0e0;
+    }
+
+    .details {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Fruit Characteristics</h2>
+  <ul>
+    <li onclick="toggleDetails('apple')">Apple</li>
+    <div id="apple" class="details">
+      <p>Color: Red or Green</p>
+      <p>Taste: Sweet and Crisp</p>
+      <p>Uses: Snacking, Baking</p>
+    </div>
+
+    <li onclick="toggleDetails('banana')">Banana</li>
+    <div id="banana" class="details">
+      <p>Color: Yellow</p>
+      <p>Taste: Sweet and Creamy</p>
+      <p>Uses: Snacking, Smoothies</p>
+    </div>
+
+    <!-- Add more fruits as needed -->
+  </ul>
+
+  <script>
+    function toggleDetails(fruit) {
+      var details = document.getElementById(fruit);
+      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
   <form>
     <h2>Kontaktiere uns</h2>
     <label for="name">Name:</label>
