@@ -9,18 +9,46 @@
         }
 
         header {
-            background-color: #9900cc; /* Choose a suitable color for the header background */
+            background-color: #ff99ff; /* Choose a suitable color for the header background */
             color: #ffffff; /* Choose a suitable text color for the header */
             padding: 1em;
             text-align: center;
         }
-        <img src="https://th.bing.com/th/id/OIP.3P62cGTBrcG96quV4RZZfAAAAA?w=158&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Blumiges Bild">
+        
+        .rotating-mouse {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c; /* Cute mouse color */
+            border-radius: 50%;
+            position: relative;
+            animation: rotateMouse 5s infinite linear;
+        }
+
+        .mouse-eye {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        @keyframes rotateMouse {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
+    
     <title>Emmas Blumiges Wunderland</title>
 </head>
 <body>
     <header>
         <h1>Emmas Blumiges Wunderland</h1>
     </header>
+    <center>
+        <img src="https://th.bing.com/th/id/OIP.3P62cGTBrcG96quV4RZZfAAAAA?w=158&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Blumiges Bild"> 
+        <h2>Der Hasezabuer fäult im Walde.</h2>
+    </center>
 </body>
 </html>
